@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Julian Initializing">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="本文内容主要参考了 Airbnb 公司的 JavaScript 风格规范。 1. 块级作用域（1）let 取代 var ES6 提出了两个新的声明变量的命令：let 和 const。其中，let 完全可以取代 var，因为两者语义相同，而且 let 没有副作用。 12345678&apos;use strict&apos;;if (true) &amp;#123;  let x = &apos;hello&apos;;&amp;#125;for (le">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端界面js编程规范">
+<meta property="og:url" content="http://yoursite.com/2018/02/27/前端界面js编程规范/index.html">
 <meta property="og:site_name" content="Julian Initializing">
+<meta property="og:description" content="本文内容主要参考了 Airbnb 公司的 JavaScript 风格规范。 1. 块级作用域（1）let 取代 var ES6 提出了两个新的声明变量的命令：let 和 const。其中，let 完全可以取代 var，因为两者语义相同，而且 let 没有副作用。 12345678&apos;use strict&apos;;if (true) &amp;#123;  let x = &apos;hello&apos;;&amp;#125;for (le">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-27T15:35:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Julian Initializing">
+<meta name="twitter:title" content="前端界面js编程规范">
+<meta name="twitter:description" content="本文内容主要参考了 Airbnb 公司的 JavaScript 风格规范。 1. 块级作用域（1）let 取代 var ES6 提出了两个新的声明变量的命令：let 和 const。其中，let 完全可以取代 var，因为两者语义相同，而且 let 没有副作用。 12345678&apos;use strict&apos;;if (true) &amp;#123;  let x = &apos;hello&apos;;&amp;#125;for (le">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/27/前端界面js编程规范/"/>
 
 
 
 
 
-  <title>Julian Initializing</title>
+  <title>前端界面js编程规范 | Julian Initializing</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/27/前端界面js编程规范/" itemprop="url">前端界面js编程规范</a></h1>
+          <h1 class="post-title" itemprop="name headline">前端界面js编程规范</h1>
         
 
         <div class="post-meta">
@@ -318,9 +319,7 @@
       
 
       
-        
-          
-            <p>本文内容主要参考了 <a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener">Airbnb</a> 公司的 JavaScript 风格规范。</p>
+        <p>本文内容主要参考了 <a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener">Airbnb</a> 公司的 JavaScript 风格规范。</p>
 <h2 id="1-块级作用域"><a href="#1-块级作用域" class="headerlink" title="1. 块级作用域"></a>1. 块级作用域</h2><p><strong>（1）let 取代 var</strong></p>
 <p>ES6 提出了两个新的声明变量的命令：<code>let</code> 和 <code>const</code>。其中，<code>let</code> 完全可以取代 <code>var</code>，因为两者语义相同，而且 <code>let</code> 没有副作用。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> x = <span class="string">'hello'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -388,8 +387,6 @@
 <p>如果模块默认输出一个对象，对象名的首字母应该大写。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> StyleGuide = &#123;</span><br><span class="line">  es6: &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> StyleGuide;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -406,12 +403,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -421,10 +418,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -432,6 +430,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -452,8 +454,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -515,6 +526,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-块级作用域"><span class="nav-number">1.</span> <span class="nav-text">1. 块级作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-字符串"><span class="nav-number">2.</span> <span class="nav-text">2. 字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-解构赋值"><span class="nav-number">3.</span> <span class="nav-text">3. 解构赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-对象"><span class="nav-number">4.</span> <span class="nav-text">4. 对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-数组"><span class="nav-number">5.</span> <span class="nav-text">5. 数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-函数"><span class="nav-number">6.</span> <span class="nav-text">6. 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Map结构"><span class="nav-number">7.</span> <span class="nav-text">7. Map结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-Class"><span class="nav-number">8.</span> <span class="nav-text">8. Class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-模块"><span class="nav-number">9.</span> <span class="nav-text">9. 模块</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -648,6 +675,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
