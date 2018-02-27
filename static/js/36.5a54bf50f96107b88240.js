@@ -1,0 +1,1 @@
+webpackJsonp([36],{"6oCT":function(e,t,n){"use strict";var r=function(){var e=this,t=e.$createElement;return(e._self._c||t)("router-view")},u=[],l={render:r,staticRenderFns:u};t.a=l},eBiN:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n("6oCT"),u=n("VU/8"),l=u(null,r.a,!1,null,null,null);t.default=l.exports}});
